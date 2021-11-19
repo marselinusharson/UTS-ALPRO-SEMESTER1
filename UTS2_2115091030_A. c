@@ -1,0 +1,42 @@
+#include <stdio.h>
+int main(){
+    printf("=========Program Untuk Menampilkan Deret Bilangan Faktorial dari 1 sampai n...==========\n\n\n");
+    int a,
+        b,
+        c,
+        hasil=1;
+
+    printf("Masukkan sebuah bilangan: ");
+    scanf("%d", &b);
+
+    for(a = 1; a<= b; a++)
+    {
+     printf("%d! = ", a); 
+
+        for(c= a; c>=1; c--)
+        {
+            if(c == 1)
+            {
+                printf("%d ", c);
+            }
+            else if(c !=1){
+                printf("%d x ", c);
+            }
+             
+        }
+
+        hasil*= a;
+
+        if(a == 1)
+        {
+            printf(" ");
+        }
+        else
+        {
+            printf("= %d ", hasil);
+        }
+    printf("\n");
+    }
+
+    return 0;
+}
