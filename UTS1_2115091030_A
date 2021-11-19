@@ -18,11 +18,11 @@ int main(){
     {
         if(a % 2 == 0)
         {
-            if(a == )
+            if(a == b)
             {
                 printf("%d", a);
             }
-            else if (a != n)
+            else if (a != b)
             {
                 printf("%d+", a);
             }
