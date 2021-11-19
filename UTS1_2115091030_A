@@ -1,0 +1,50 @@
+
+#include <stdio.h>
+int main(){
+
+    int a, 
+        b, 
+        genap = 0, 
+        ganjil = 0, 
+        hasil = 0; 
+
+    printf("Masukkan bilangan: ");
+    scanf("%d", &b);
+    printf("\n");
+
+    printf("hasil deret: \n");
+
+    for (a = 1; a <= b; a++)
+    {
+        if(a % 2 == 0)
+        {
+            if(a == 1)
+            {
+                printf("%d", a);
+            }
+            else if (a != 1)
+            {
+                printf("%d+", a);
+            }
+            genap -= a;
+        }
+        else if(a % 2 == 1)
+        {
+            if(a == b)
+            {
+                printf("%d", a);
+            }
+            else if(a != b)
+            {
+                printf("%d-", a); 
+            }
+            ganjil += a;
+        }
+
+        hasil = ganjil + genap; 
+    }
+
+    printf(" = %d", hasil);
+
+    return 0;
+}
